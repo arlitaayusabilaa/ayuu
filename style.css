@@ -1,0 +1,62 @@
+#halaman {
+    width: 800px;
+    margin: auto;
+}
+
+nav {
+    background-color: #e4dcdcce;
+    display: inline-block;
+    width: 100%;
+}
+
+nav ul {
+    padding: 10px;
+    margin: opx;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    background-color: blueviolet;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: aliceblue;
+    line-height: 60px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+}
+
+nav ul li:hover >ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -82px;
+    left: 170px;
+}
+
+li >a::after {content: ' ';}
+li >a:only-child::after {
+    content: '';
+}
